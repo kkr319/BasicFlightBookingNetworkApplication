@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2018 5:49:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Airports" table="`airports`" catalog="frs" optimistic-lock="version">
+        <id name="code" type="string">
+            <column name="code" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="airportname" type="string">
+            <column name="airportname" length="45" not-null="true" />
+        </property>
+        <property name="latitude" type="string">
+            <column name="latitude" length="45" not-null="true" />
+        </property>
+        <property name="longitude" type="string">
+            <column name="longitude" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

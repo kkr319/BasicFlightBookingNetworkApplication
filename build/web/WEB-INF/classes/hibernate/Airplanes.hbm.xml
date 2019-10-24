@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2018 5:49:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Airplanes" table="`airplanes`" catalog="frs" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="airplanename" type="string">
+            <column name="airplanename" length="80" not-null="true" unique="true" />
+        </property>
+        <property name="seats" type="int">
+            <column name="seats" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

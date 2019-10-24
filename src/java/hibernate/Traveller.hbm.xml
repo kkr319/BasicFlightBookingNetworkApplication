@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2018 5:49:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Traveller" table="`traveller`" catalog="frs" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" />
+        </property>
+        <property name="passnumber" type="string">
+            <column name="passnumber" length="45" not-null="true" />
+        </property>
+        <property name="emailaddress" type="string">
+            <column name="emailaddress" length="45" not-null="true" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="phonenumber" length="45" not-null="true" />
+        </property>
+        <property name="airlines" type="string">
+            <column name="airlines" length="45" not-null="true" />
+        </property>
+        <property name="fcitycode" type="string">
+            <column name="fcitycode" length="45" not-null="true" />
+        </property>
+        <property name="tcitycode" type="string">
+            <column name="tcitycode" length="45" not-null="true" />
+        </property>
+        <property name="traveldate" type="string">
+            <column name="traveldate" length="45" not-null="true" />
+        </property>
+        <property name="routeid" type="int">
+            <column name="routeid" not-null="true" />
+        </property>
+        <property name="chilnum" type="int">
+            <column name="chilnum" not-null="true" />
+        </property>
+        <property name="infnum" type="int">
+            <column name="infnum" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
